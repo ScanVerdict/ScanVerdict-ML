@@ -1,0 +1,8 @@
+Name,grading,date,Text
+Name,Joel Miller,몽서니,Celia Faiola
+grading,2 étoiles,5 étoiles,1 étoile
+date,il y a 5 mois,il y a une semaine,il y a 2 jours
+Text,"I really love habit, but this visit was terrible. The staff are great guys, the taste of the food was excellent! But a soda machine is a horror! All drinks have a disgusting chlorine smell, it's not possible to drink, it's a big problem!","C'était un peu effrayant de voir un adotti sans abri assis sur la terrasse, mais je ne supporte pas Habit Burger. En fait, je préfère les frites de haricots aux hamburgers.","We had a very small order. 2 burgers, French fries, onion rings, and a kids meal. They managed to forget the French fries and onion rings even with this small order. Didn't realize it until we got home (good reminder to always double-check before leaving) but then we couldn't contact any living human at the store to get a refund. You have to fill out an unnecessarily long inquiry form on their website. The whole thing is ridiculous. Good grief."
+Language,en,fr,en
+label (roberta),NEGATIVE,nan,NEGATIVE
+score (roberta),0.7714224457740784,nan,0.9085005521774292

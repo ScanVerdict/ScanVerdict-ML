@@ -1,8 +1,346 @@
-Name,grading,date,Text
-Name,Joel Miller,몽서니,Celia Faiola
-grading,2 étoiles,5 étoiles,1 étoile
-date,il y a 5 mois,il y a une semaine,il y a 2 jours
-Text,"I really love habit, but this visit was terrible. The staff are great guys, the taste of the food was excellent! But a soda machine is a horror! All drinks have a disgusting chlorine smell, it's not possible to drink, it's a big problem!","C'était un peu effrayant de voir un adotti sans abri assis sur la terrasse, mais je ne supporte pas Habit Burger. En fait, je préfère les frites de haricots aux hamburgers.","We had a very small order. 2 burgers, French fries, onion rings, and a kids meal. They managed to forget the French fries and onion rings even with this small order. Didn't realize it until we got home (good reminder to always double-check before leaving) but then we couldn't contact any living human at the store to get a refund. You have to fill out an unnecessarily long inquiry form on their website. The whole thing is ridiculous. Good grief."
-Language,en,fr,en
-label (roberta),NEGATIVE,nan,NEGATIVE
-score (roberta),0.7714224457740784,nan,0.9085005521774292
+Name,grading,date,Text,Language,label (roberta),score (roberta)
+Reezaane Bundhoo,4,a year ago,"Delicious cakes, hot/cold beverages and great variety of bread.
+
+Price OK
+
+""Ile Maurice"" cake only yellow but missing blue, red and green ;)
+
+Customer service average but not an issue considering they work on their feet all day.",en,POSITIVE,0.9091299772262573
+Akram Althawbani,5,3 months ago,"Best place but it's still camels man opinion. You've to try it before judging it.
+Well done guys 😉 …",en,POSITIVE,0.802348792552948
+Ibrahim Sobh,4,a month ago,"Amazing place to buy bread and sweets , always crowded , cashiers are professionals but not always nice",en,NEUTRAL,0.3680613338947296
+Mareike Engel,5,5 months ago,Love the baguette and croissant. Staff is always friendly and helpful :),en,POSITIVE,0.9916832447052002
+shrishail kurangi,3,6 months ago,All the items I have tried here are really great but one of the employee is very rude to the customers,en,NEGATIVE,0.3929296135902405
+Said Djedidi,5,3 years ago,"I was so pleased to try a French boulanger. Staff was very helpful with my poor FrenchI will come back.
+Go and try",en,POSITIVE,0.9719488620758057
+Alvin Alias,1,7 months ago,Over priced and unfriendly staff,en,NEGATIVE,0.9693254232406616
+M N,5,6 months ago,"Amazing bakery! I went there for the first time today, the vendors are very welcoming.
+I tested their trompe l'oeil desserts and they are exquisite! Great value for money compared to what the competition does (especially C***** G*****)
+Recommendation eyes closed :)",en,POSITIVE,0.9896131157875061
+Larissa Akm.,4,a month ago,"My race:
+1 baguette from the fields €1.30, it is good and the yellow color is pleasant.
+
+1 strawberry cabbage 🍓 €4.90.
+The pastry is huge, easy to divide it into two parts. Lots of cream, strawberries 🍓 for decoration.
+.
+The black forest, not yet tasted at 5.0€
+A bottle of crystal clear water at €1.30.
+.
+There are tables for coffee ☕️, the paninini-pastry-drink formula at 8.9€.",en,POSITIVE,0.8842597603797913
+Wissem Smaali,1,11 months ago,"To avoid
+The Piraeus bakery in Vitry, the saleswomen are unable to smile in front of the customers, no naked hello, goodbye, no words of kindness,
+The bakery closes at 9 p.m., 7:30 p.m. they no longer have bread, no packets
+To avoid",en,NEGATIVE,0.8628463745117188
+Cathy Lch,5,5 months ago,I love this bakery and I go regularly especially to the center of Vitry to buy pastries there. They are always a hit with my guests! The price is quite fair for such beautiful products and I find the low ratings and comments about the mood of the staff quite harsh. I've always come across nice vendors when you're smiling with them. It is especially that they are very busy because there are always people and do what they can to serve quickly.,en,POSITIVE,0.9750838279724121
+ted tenore,1,4 months ago,"I specify the star I give it only for the croissants and pain au chocolat, the rest nothing to say, really too disappointed with your croissants and pain au chocolat no taste of butter and expensive for butter croissants and it's not the first time I make the remark and not the only one and each time we will do better nothing has changed since. Too bad I like the team",en,NEGATIVE,0.5588300228118896
+Sly yo!,1,4 months ago,"Too bad for the pastry chef who struggles and my talents in this bakery but the reception is terrible, the politeness they don't know. boss changed staff. When you don't like your job, you change because it's your business that suffers. I won't be going back there again and yet it's the closest bakery to my house.",en,NEGATIVE,0.9162027835845947
+Emiie.R D,1,a month ago,"Too bad the products are very good but the saleswomen as kind and nice as a slap in the face... It's less good: Hello barely audible, the goodbye between two conversations with the colleague in another language so as not to to be understood... Ah! And an omnipresent disdain.",en,NEGATIVE,0.777331531047821
+Anaïs Izambay,3,a month ago,"I put 3 stars because in the end I came across 2 friendly vendors and good lunch dishes, as well as good pastries. But I specify that I did not come there any more because I had been served by a rude young saleswoman (neither hello nor insolent in her answers).",en,POSITIVE,0.4569399654865265
+Kroos Vk,3,a month ago,"Good bakery overall, I could have given five stars but frankly it's very disappointing in terms of courtesy, we don't ask for a forced smile for five minutes. But still a minimum of reception for the customer. Damage",en,NEGATIVE,0.7517949938774109
+Kamilia D,5,3 months ago,Excellent pastries!!! Don't hesitate to treat yourself with your eyes closed!! Perfect for a little break during the day 😁nice staff...maybe a more suitable terrace could be nicer...for a gourmet break 👏👏👏...,en,POSITIVE,0.9804682731628418
+نوال العنزي,5,a week ago,"The bakery is a wonderful word, it is clean and delicious, bread brushes and samun of all sizes and types - and they have cake and cupcakes with all flavors and fruits, and daily they tell croissants and pastries sweetened with chocolate and they have all flavors - in general, it is suitable for lovers of baked goods.",en,POSITIVE,0.9862940907478333
+Cam Nguyen Truong,2,3 months ago,"The bread is good, the pastries too. But the welcome help, the boss should really change things, he has plenty of opinions on the welcome.
+Losing customers is faster than making them",en,POSITIVE,0.5561702251434326
+Michael,1,a month ago,"If I could put -1000 I would have, I asked for baguettes cut in half. One half fell off while handling it and she sold it to me anyway. I let it go because God sees everything. I just lost 60cts (the equivalent of half a baguette).",en,NEUTRAL,0.5007442235946655
+Marie Jav,1,a month ago,"The quality is not up to the price, too expensive for frozen products, as for the saleswomen, disaster, they don't even know how to close the bag that contains the pastries. They are not friendly, talk to each other without even looking at the customer.
+Then speaking in Arabic in front of customers is not correct. Cordially.",en,NEGATIVE,0.951801061630249
+rxm7.68z zzz,5,a month ago,"Great bakery, you can find everything you need there, very pleasant sellers, very good atmosphere. Particularly a blonde lady who gave me a superb welcome",en,POSITIVE,0.9885166883468628
+ouhichi sayf,1,2 months ago,"Frankly we have to change the saleswomen we are fed up with them.. no politeness no respect and the worst they force themselves to serve us........we don't even talk about the welcome pfffffffff...... ...........
+
+.especially the little one with the scarf and the other one that she has a mole...a bakery avoided",en,NEGATIVE,0.9600046277046204
+Carine Coudrier,1,3 months ago,"I was going but decided to stop.
+The taste quality is present. However, the professional quality of the staff (the saleswomen) is not present. They are very unfriendly.",en,NEGATIVE,0.9318640828132629
+aurelia stanica,1,2 months ago,"Hello, I am a loyal customer to this bakery rt I am very disappointed by the behavior of some vendors. I asked to cut the baguette and the saleswoman was not happy. I am bothered by scuze and she orders to speak in another language with her colleague. This is not correct behavior.",en,NEGATIVE,0.9635428786277771
+Marwan Marwan,5,a month ago,"One of the best bakeries in Vitry-sur-Seine,
+Do you go to a bakery for a smile or for a good know-how.
+The bakers are very friendly by the way.",en,POSITIVE,0.9852692484855652
+Joëlle,1,a month ago,"Unpleasant welcome from saleswomen and pastries more expensive than at Porte de Choisy. It's really a pity, because you are well placed.
+Mr. Boss frame your employees who have no business sense.",en,NEGATIVE,0.6573901176452637
+Massa Tiberi,1,5 months ago,"Honestly, this is the third time I've been to this bakery and I'm extremely disappointed with the welcome. I don't know if it's because of the holidays or the lack of employee holidays, but the last two times I went there the saleswomen were terrible and terribly lacking in courtesy. It's the last time I'm going there.",en,NEGATIVE,0.9746355414390564
+Sarah M,1,6 months ago,"Weird saleswoman especially a brunette with a wart on the corner of her nose. Badly brought up, insolent, especially there to put on a show.
+Prices at the limit of theft ... pastry at 6 euros not even infecting quality. I have bought cakes several times that my children have refused to eat.",en,NEGATIVE,0.944705605506897
+Kelly H,2,5 months ago,"I agree with previous reviews...
+I really like pastries, pastries and lunchtime products (sandwiches, tacos, pizza...), I clearly have no problem with them, which I eat with great pleasure.
+
+However, it remains to be admitted that the cordiality of the staff is frankly very disappointing and needs to be reviewed urgently.
+The hello is random, the smile I'm still looking for, and woe if we add a product at the last minute.
+
+If you're having a bad day or you've had an unpleasant customer, you don't need to let off steam on the next one, who is correct and polite.
+I am myself in sales and I make the distinction very well.
+If you can't stand the customers you have to change (easier said than done I understand, but when you almost only have negative opinions on always the same thing, namely the friendliness of the saleswomen, you may have to get back to question. The reputation of the bakery depends on it).
+
+Briefly in summary:
+The food: great!
+The staff: flop!",en,NEUTRAL,0.38543570041656494
+Thierry,2,5 months ago,"The reception has improved a little, quality ok on the bread side, it could be better.
+Pastries and pastries prices are more expensive than bakeries in Paris, especially for the quality it is.",en,NEUTRAL,0.43266746401786804
+Bouchra Rejjali,1,5 months ago,"Bakery to avoid !!!!!!!
+Very bad experience, badly behaved saleswomen, especially those in the evening, recently there was a guy who worked in the evening, he didn't even speak French, he didn't understand what I was telling him.
+
+A saleswoman was talking on the phone while serving customers, and putting on a loudspeaker. This is a lack of respect.
+Others do not put on gloves when serving customers or placing products.
+
+In my opinion the ship is sinking, I will never go there again.",en,NEGATIVE,0.9724637866020203
+Bouthaina Helal,5,4 months ago,"I love this bakery and I go regularly, especially the seller Meriem is very pleasant, helpful and smiling who is always listening to customers. I recommend this bakery 100% ♥️",en,POSITIVE,0.9922345876693726
+Maya Kysdeco,5,a month ago,I loved the bakery the bread is very good the pastries and cakes too and especially the trompe oeil are delicious,en,POSITIVE,0.9916389584541321
+Bernard Levier,1,3 months ago,"Following my several visits to the neighborhood, always the same problem of an unfriendly saleswoman and the quality of the pastries and bread c deteriorated. No reaction from the boss despite the comments on google",en,NEGATIVE,0.8774547576904297
+Binta Bah,1,2 months ago,"Very unpleasant staff. Even a hello is too much to ask. Advice change jobs.
+Moreover, the products have gone down in quality!",en,NEGATIVE,0.9600379467010498
+"Bassem ,",1,3 months ago,"Rotten traditional baguette with mould, watch your baker Mr the boss because I fell ill, I prefer to let you know so that it happens again, I could have taken photos to send them to the DDPP service (Departmental Directorate of protection of the population of 94 located in Rungis Attention Attention hygiene is essential",en,NEUTRAL,0.5000390410423279
+JPh M,5,5 months ago,"Bakery always very well stocked, a lot of original pastries (pain au chocolat/Nutella “tigré”, pistachio or raspberry croissants), welcoming and helpful staff",en,POSITIVE,0.9733879566192627
+Sarah love you,3,a month ago,I agree about the customers who are unhappy with the reception of the saleswomen. But not all of them are friendly and welcoming.,en,NEGATIVE,0.553477942943573
+Niamoungue Mendy,2,a year ago,"Hello I came to buy a slice of strawberries at the end of the morning the waitress packed me a slice of strawberry pie so I did not see what she packed it was once that I wanted to eat it in the evening I thought I saw that she was wrong and I paid the price for a share of strawberries, is that normal?????",en,NEGATIVE,0.6465288996696472
+Omouri lynda,5,3 months ago,"Top notch bakery!!!
+Very good variety of products without missing the warm welcome of the saleswomen.
+Good continuation to all.",en,POSITIVE,0.9712557792663574
+Carine Nadia,1,9 months ago,"First pass, good wrap! but rude staff. They pull the face they do not say hello. We have the feeling of disturbing these ladies while she is chatting in Arabic in front of the customers, I find that very rude of them. Now I just want to tell them ladies if you don't like your job change your vocation. I wouldn't go back. The boss should review his staff. Seen the comments.",en,NEGATIVE,0.9450680017471313
+Alex Ling,3,2 years ago,The traditional baguette is correct and the staff are quite efficient.,en,POSITIVE,0.9244822859764099
+Sam K,2,5 days ago,The sandwiches are good but the service is slow and quite unpleasant,en,NEGATIVE,0.6750295758247375
+Sha Fie,1,8 months ago,"We forced ourselves to go to this bakery, the pastries and bread being very good despite the unpleasant mood and attitude of the shop assistants. However today will have been the last time, the attitude of the sellers being more than deplorable and insulting during a request for information on the price increase. In case it has been forgotten, a customer is not supposed to get yelled at when asking a question. If you want quality service, this bakery is to be avoided.",en,NEGATIVE,0.5717406272888184
+L. T.,3,2 years ago,"They have good products but unfortunately the saleswomen are very apathetic and unfriendly, there is still a lot of incivility from the people who go beyond as if they were alone in the world, no good manners, otherwise the tuna panini is very good everything like pain au chocolat says the nutella tiger, but not the speculoos éclair which is not tasty.",en,NEGATIVE,0.6727876663208008
+Emile Leuba,4,a month ago,Good tradition and good wholemeal breads. Can be a little pricey on some items but not the best in the neighborhood!,en,POSITIVE,0.45418834686279297
+Clarisse Jsn,2,8 months ago,Same price as in central Paris. 7th portion of salad with not much in it. We can no longer eat efficient and cheap in a bakery? Just because the place is clean and there's gilding on the pastries doesn't mean everything has to be expensive.,en,NEUTRAL,0.4966818690299988
+sohane mbye,5,a month ago,A very warm welcome received from a young blonde lady. Super benevolent! I recommend !!,en,POSITIVE,0.9906796813011169
+Koharu Chan,1,9 months ago,"I have been going to this bakery regularly for months, sometimes I come with my dog. I never had any problem until today, I was fired from the shop curtly, I wanted to take 2 pains chocolats, it would have taken 2 minutes! Even the customers around were not disturbed by the presence of my dog. Already that the service is not very pleasant at the base… Shame, I will not return.",en,NEGATIVE,0.6349229216575623
+solange laugie,3,2 years ago,"The tradition and the baguette are excellent but unfortunately the pastry does not follow. The strawberry is bland the cream is only with butter... not good
+Paris Brest la crème does not taste like praline... It's a real shame because the price of the cakes is expensive",en,NEGATIVE,0.8878645300865173
+Fatou THIAM,4,9 months ago,"Very good bakery, I love your pastries. On the other hand, on 08/24 I bought a brioche (I take it every time I go) but this one was quite big that day. I was super happy but when I got home I saw that it was not cooked inside. Pay attention! I hope it won't happen again. Otherwise the rest nothing to say!",en,POSITIVE,0.8809823989868164
+Hakim Maaref,4,4 months ago,Magnificent virine and excellent product at all levels baguette special breads and especially The top pastry.du top,en,POSITIVE,0.9595820903778076
+malak c'tou,1,a year ago,"Being a customer at this bakery since it opened, I am very satisfied with the products, an excellent tradition, on the other hand the rudeness and lack of professionalism on the part of some saleswomen become unbearable, it is essential that the boss do something to avoid the deterioration of this bakery (really too bad).
+PRECISION: there is no more bread from 6:30 p.m. when the boss is on vacation while closing time is at 9 p.m.",en,NEGATIVE,0.3750270903110504
+Said Taourirt,1,11 months ago,Saleswoman with no professional no smile. Not even a hello. I will not come anymore because it is really unpleasant for customers. The production of sandwiches in the morning around 4:30 a.m. was seen from the window from the outside. No gloves. Where is the hygiene...,en,NEGATIVE,0.9702604413032532
+Flore Spriet,2,8 months ago,"The products are super good but the saleswomen are extremely unpleasant. No hello, we feel that we are disturbing them in their discussions. It makes you want to go there more when the products are tasty.",en,NEGATIVE,0.38733288645744324
+Yoga Relax,1,a year ago,"Today April 7, 2022, it's been 6 months since I came to buy bread in this bakery and you know what? after buying bread and some pastries, I still saw the rudeness of the waitresses at the reception, no hello or goodbye. I had the impression of seeing depressed people, at the end of their lives. Ladies waitresses, given your funeral heads, you might have to change jobs or... Apart from that, good bread, good pastries, reasonable price, and the baker is pretty cool.",en,POSITIVE,0.4694168269634247
+idris hassaini,1,a year ago,"It's been a long time since I've been to this bakery because of the unpleasant welcome but today I was very surprised by the two new saleswomen, very polite, courteous, very good speech, impeccable French, helpful and above all smiling. This is really what was missing in this bakery (to be promoted).
+I will come back with great pleasure provided that they are still there of course.",en,POSITIVE,0.9586763381958008
+kazdaghli hamza,5,a month ago,"Very good bakery, pastries and snacking are excellent.",en,POSITIVE,0.9885846376419067
+Paupau,4,a year ago,"Personally I love this bakery, having already been a short-term baker in another bakery, badness does not reach us. Serving customers who are disrespectful to the sales assistants makes you especially not want to serve them. You all have your opinions and that's normal, but to disparage the sales assistants, I don't totally agree with you. In any case my favorite bread and the one I take all the time is the Baltik bread, haven't tasted the pastries yet but I'll come and have some next time",en,NEUTRAL,0.37781286239624023
+Pitaya,1,a year ago,"I do not recommend this bakery at all, The first time I went there they made a mistake on my order, the saleswoman dared to raise her voice at me, because I told her that she was cheating when she does not do her job properly at all. The second time, I came across another one where I stood for 6 minutes in line without her even asking me what I wanted, until I challenges (she served 3 customers in front of me). It is unacceptable . I think you should sincerely take a course to learn how to welcome customers, deplorable behavior. You don't even deserve a star I prefer to go 10km to buy a baguette than to go to this bakery which is located 100m from my house. (Badly welcoming people will not help you to have more customers) cordially, hearer.",en,NEGATIVE,0.9537783861160278
+rx l,1,11 months ago,"Unpleasant sellers, I've been a regular customer for over a year, and no change in behavior, especially the lady with a failed roux! They look like clones, they all have the same funeral head! Hello thank you base! Looks like we're begging. Now I would go further!",en,NEGATIVE,0.9513112902641296
+Vincent KIFKIF,1,a year ago,"Goodbye CAP sellers!!! The bread and pastries are good, but that's it. Saleswomen are rude and rude to customers! Never a hello, a goodbye or a thank you, the principle of this bakery = pack then pay!!! I see in the comments that I'm not the only one to make the remark, I believe that we must ""ANNESS"" them (unfortunately I'm filtered and can't use other words)!!! Can the boss do something, because this is the first time I have encountered in a business such a blatant lack of respect for customers?? We used to go there daily with my wife and friends, now it's over, we prefer to go further.",en,NEGATIVE,0.8243504762649536
+Léopold Carron,3,a year ago,"It's expensive compared to other stores. Saleswomen often get large orders wrong and have never been very pleasant (negative reviews are deserved). But the quality of the products is excellent, homemade and their Swiss bread / almond croissant is enough to go back to every week... each one has their own weakness.",en,NEGATIVE,0.5033258199691772
+F? ?F,1,a month ago,"High price and normal quality, the saleswoman ignored me and passed to the back customers, excuse me ???",en,NEGATIVE,0.7130289077758789
+Malcolm,1,a year ago,"Quite a good bakery, on the other hand, the saleswomen must be calm immediately, not friendly at all, borderline insolent and of course no kind words, she had a black bun with a mole around 4:30 p.m. this Wednesday the next time she talks to me like her she will see.",en,NEGATIVE,0.6928724050521851
+Adrien Charles,5,2 years ago,"Frankly when I read the negative comments on the saleswomen, I will say it is not the same bakery where I buy my breads, pastries and pastries since the opening it has been two of that, I really dispute his comments because I find it it's the opposite they do their job correctly and really hat, because as I work in a supermarket I know what this job is, with so many customers a day I find the saleswomen are courageous and manage their jobs well . When you see that the line reaches outside I think it's a bakery that works well, personally I come in 2 to 3 times a day I've never seen a saleswoman speak badly to a customer.
+I think if a customer has been badly received by a saleswoman, he must see directly with the boss and explain the dissatisfaction.",en,NEUTRAL,0.4617495536804199
+Ling Hsia,3,7 months ago,"Saleswoman not very pleasant, broken and dirty seat (which has the merit of existing)… dirty floor. Damage. (Ah yes, don't make a sheet without details... at least that's what I've been told...)",en,NEGATIVE,0.873412013053894
+Kaja Wystanska,4,a year ago,"I am neutral with respect to the reception, it is not exceptional but does not shock me more than that. The pastries are very good and we return regularly. Disappointed by the bread (very dry and bland) of the veggie sandwich. But hey, regularly happy with the desserts!",en,POSITIVE,0.6318930983543396
+Hichem Belkacem,1,a year ago,"Living in the neighborhood, I agree with the majority of the negative opinions.
+I spend every morning in this bakery and nothing changes the reception is always cold, the saleswomen are really not professional, not at all smiling, not clean, speak very badly to the customers (except treatment of favors for the others).
+The last time the panini was cold inside, so I asked to warm it up, the saleswoman was going to insult me.
+I come with my money, I don't do charity to deserve such a cold and greedy reception.
+I don't know what criteria you use to recruit staff, but frankly you should review them.
+Hire competent and above all respectful people and not cantinieres who do not even know how to be friendly with customers.
+It's a shame because it's the only big downside of the bakery, side products nothing to say everything is very good.",en,NEGATIVE,0.8900967240333557
+Marc S,1,a year ago,"The bakers are so unpleasant that I decided not to go to this establishment anymore. The service is deplorable, you almost feel uncomfortable being a customer, you feel like you're disturbing. Dear baker, it is high time to renew the people you put at the counter... in view of the comments, it has been going on for 1 moment. The baguettes are 10 cents more expensive than other bakeries in the area. Unfortunately, avoid!",en,NEGATIVE,0.9779900312423706
+Iman CHAGGAR,5,6 months ago,"Warm welcome, very pretty and clean window. The pastries and bread are very good. I recommend",en,POSITIVE,0.9918538331985474
+Lisa Mara,1,a year ago,"Avoid, the worst bakery in Vitry!!!!
+I had to give 1 star but you don't deserve it!
+
+Horrible staff, the waitresses are unfriendly, very unpleasant, respond badly to customers!! Sometimes it's better not to take members of his family to the counter, his wives are not made for that, redirect you!
+
+It is very expensive for a quality of pastry that is not good at all, the thousand leaves are made with very heavy butter cream. The bread is not good at all. The sandwiches remind me of the sandwiches sold in the big stores with bread full of crumbs.
+
+Your bakery is well placed I find it a pity that the quality is not up to the location!!",en,NEGATIVE,0.9670491814613342
+Atef Ammari,5,4 months ago,Thank you very much for the afternoon team Le Cap Good service thank you for all always smiling 🥰💐🥇 …,en,POSITIVE,0.9910176992416382
+Sadio,1,a year ago,"Today Sunday, March 27, 2 p.m. I sent my little brother to buy me a panini at this bakery. He comes back with a creased, grilled and relatively small panini for the price (€5). It's been 2 times that when I send my little brother who is 10 years old to this bakery, he has been given neglected things, another time it was a folded apple turnover. Is there a difference in treatment? Unfortunately I did not have time to return to the bakery but it is unacceptable.",en,NEGATIVE,0.8350608348846436
+Kaissa Saidani,1,7 months ago,Not friendly refuses to put me mayo in my sandwich which cost 5th while they are 3 at the reception the customer is far from being king even after paying I do not recommend and I will never go again,en,NEGATIVE,0.9805498719215393
+chris94270,5,a year ago,"First pass today, I took several pastries and pastries, the prices on a chuya above average but not disappointed!! Very good
+Nice store, service was good.
+I will be back soon",en,POSITIVE,0.9849239587783813
+Sofvitrry94,1,a year ago,"Really need to change the ""blonde"" lady waitress at the checkout!!! Rude, disrespectful, still does not know how to wear a mask correctly and allows himself to reflect on customers!!! Unacceptable!! It's not the first time I've noticed her, but I really want to point her out because she's not at all professional and pleasant! Previously there was a much more efficient and pleasant waitress... too bad! We should really think about recruiting qualified staff!!",en,NEGATIVE,0.9499337077140808
+robinio016 r,1,5 months ago,"Horrible pastries, no taste but bread in addition to an unpleasant staff, I do not recommend.",en,NEGATIVE,0.982548713684082
+Hugo,1,a year ago,"Good morning,
+
+I visited your bakery this morning, and I was extremely disappointed by the deplorable and disrespectful welcome I received. The saleswoman with glasses was unpleasant, condescending, almost vulgar, and allowed herself to make completely inappropriate remarks with customers. I really hated my visit to your house today.
+
+I had already visited your establishment several times this summer, and I always had the pleasure of being taken care of by a nice young dark-haired lady, who no longer seems to work for you, which is a shame, because her service was more than excellent: smile, kindness and kindness were constantly present.
+
+I am therefore very disappointed to find that the service has deteriorated to this point. This does not seem to be a commercial approach that represents your brand as I knew it: know that you have lost a customer and that I will not come back to your bakery, even if it means traveling several kilometers to buy what I need. elsewhere.
+
+A word of advice: change staff and choose people who know about customer service!!
+
+Good luck",en,NEGATIVE,0.9225140810012817
+Criss LoneKey,2,a year ago,"There from the very beginning, I could notice the decline in the service of the saleswomen and I agree with most of the negative opinions concerning them. I don't know the turnover/total workforce but one thing is sure, it's that smiles are rare, the answers are quite curt and the welcome is often cold.
+Literally 2 steps from my house, I have already retracted myself at the last moment just thinking about it.
+Regarding the products, I take a traditional baguette from time to time, which I find very good. For the pastries, it's a bit lucky, I have the impression that sometimes it passes and other times less (maybe leftovers from the day before).
+To see how it will evolve but I think to give a chance to the bakeries around.",en,POSITIVE,0.6662778258323669
+Pierre Hard,1,a year ago,Too bad the boss does not take into account the many negative opinions about the reception of his customers because unfortunately that does not change! The bread and pastries are good but the service is deplorable and sometimes even very disrespectful to customers.,en,NEGATIVE,0.9646602272987366
+Illy Ben,1,2 years ago,"To avoid. Cold and very unpleasant welcome. The sellers do not say hello, are unable to give you the name of the products they sell. They are very disorganized: I waited to be served when there was only one client in front of me and they were 3 behind the counter. I felt like I was disturbing. The pastries are very sweet bordering on sickening. I strongly advise against.",en,NEGATIVE,0.9520953297615051
+Lisa Berthe,1,a year ago,"Visit a 1st time wow !!!! A real disappointment ..... saleswomen not welcoming, NO politeness, sour face and behavior would say that bothered them ..... they look badly at customers abusing them, I asked a question and she answered me curtly!!! And don't like their jobs so they are unpleasant with their aberrant customers!!! To fleerrrrrrrrrrrr",en,NEGATIVE,0.9804841876029968
+Nassira Bouzidi,1,a year ago,"Well unfortunately I have no better to say than the previous opinions I work in the bvd and my colleagues and I like to do small brunches.
+I went this Friday and sincerely I recognize that some pastries are excellent but as for the ladies who are in theory supposed to receive customers with a minimum of kindness wow this is really not the case.
+I'm sorry but when you're in depression you work preferably in a closed environment at best or at least without an audience.",en,NEGATIVE,0.4628126919269562
+Artisans de France,5,5 months ago,"Very good bakery, I don't understand the rating.",en,NEUTRAL,0.43754836916923523
+Jerome Delesalle,1,a year ago,"The service there is catastrophic. Whether there are people or not, the service is long, very long! Staff are on cell phones or chatting without caring about the customer. For the smile and the polite formulas you will come back, here it is the chain and a cold and austere welcome. The bread is to be consumed quickly, from midday to evening it does not keep well. It is very disappointing because the location is top",en,NEGATIVE,0.9261983633041382
+LECOACH OSM,5,2 years ago,"I had a lot of fun during my trip to Paris by going here! If there was one in the south I would go straight there! The macaroons are to lick your fingers, the strawberry is incredible and I'm not even talking about the cream which is just incredible!
+I recommend!",en,POSITIVE,0.9907119870185852
+Hylhem Mfk,1,a year ago,"I bought 4 pastries today, a raspberry tart, a strawberry, a Paris Brest and a praline millefeuille.
+The 4 are horrible to vomit
+Expired raspberries, frozen strawberries and waterlogged, Paris Brest is not new, it was hard and dry! When the praline millefeuille does not smell of praline and it is not of the day!
+Just horrible, I had a stomach ache all afternoon me and my family.
+Know that if I have a food infection I will sue you and I will send you the food hygiene control services
+
+Good day.",en,NEGATIVE,0.9585360288619995
+Leo Duteil,1,2 years ago,"Beautiful airy and bright structure, managed by clichés of ""cantinières"" certainly new to the profession. With the most absent of delicacies, your inexpensive product will be served awkwardly and without advice.
+You will end on a very salty note which could have been embellished with a graceful ""NEXT"".",en,POSITIVE,0.5879965424537659
+Norman WELLE,1,3 years ago,"Products never available, an unprofessional saleswoman, is it a bakery?
+In the life of a baker, it happens 2 or 3 times to have a large influx of customers who all buy the same products and to be out of stock but this is every week, don't learn you not of your mistakes?
+In addition, the products are very misshapen and one of the saleswomen is not smiling and sometimes forgets what was requested 3 seconds earlier...",en,NEGATIVE,0.9472920894622803
+Sarah Pro,1,2 years ago,"Reading the comments reassures me because I'm not the only one to think so! There is a real lack of professionalism on the part of the bakers, lack of communication, bad reception I have been living next to this bakery for 2 years and I find it sad not to be a minimum courteous and pleasant with customers . It is unacceptable I strongly advise against it despite the quality of certain products",en,NEGATIVE,0.9663037061691284
+Hacksou,1,2 years ago,"It's been two times that I have been served a sandwich with a bread that is not fresh at all, Super hard to eat. Seen from the outside it is beautiful bright welcoming but nothing fresh it looks like it was done the day before. I do not advise you",en,NEGATIVE,0.8810903429985046
+Manuella M,1,a year ago,"TO FLEE !!! The vendors are rude and their good faith is questionable. I ordered chouquettes for 2€20 but they charged me double so 4€40!! And they don't even have time to listen to me pretending there are a lot of customers.
+And the worst, the chouquettes were racy and very oily. Probably leftovers from several days. Question quality, it is better to buy pastries at the crossroads next door.
+In short, I will not set foot there again.",en,NEGATIVE,0.9666793942451477
+Sarah H,1,a year ago,"You should review your opening hours.
+When you post an opening at 6 a.m., you don't let customers hang out in the rain for 30 minutes.
+We are not dogs!!!
+It's really nonsense this bakery pff.
+I wouldn't even put a star, it's just that you have to put a review.
+But that would be up to me, I would put - 100 stars.
+No respect for customers, no good manners, no friendliness, nothing at all.
+The worst bakery I have been able to visit and unfortunately I live 1 minute away, not much choice.
+When I come here it's really out of spite, it's serious all the same.",en,NEGATIVE,0.9565102458000183
+Pauline Fournerat,1,2 years ago,"What a welcome every time I go to buy my bread...I know what to expect unfortunately. No hello, no exchange, no kindness. So certainly the pastries and the bread are good... but the service is deplorable. What a shame",en,NEGATIVE,0.7194902300834656
+Aurore Loyer,1,2 years ago,"I can't get over the lack of communication and listening that this establishment lacks towards customers.
+I come to get croissants and I am told to wait 10 minutes, so I wait nicely. The 10 minutes pass then 15 minutes and I will ask one of the ladies if the croissants are ready, and she tells me in 16 minutes. How the 10 minutes already transformed into 15 minutes could still be increased to 16 minutes. It's still amazing and not an excuse on his part.
+I don't find it normal that a customer has to wait so long for 4 unfortunate croissants..
+
+And alas in this bakery it is not the first time where I had to wait more than 25 minutes for 4 croissants.",en,NEGATIVE,0.4846643805503845
+Ali BUTT,1,3 months ago,"Chocolate bread, croissants and pastries: industrial! Not ""Homemade""",en,NEUTRAL,0.601825475692749
+gaoua sarah,5,2 years ago,"I find that the saleswomen are very friendly, smiling quickly
+on the contrary when I go there, the customers don't even respect the waiting line .... ect. Very good bakery, the best in the area.",en,POSITIVE,0.9307644963264465
+mine nadia,2,3 years ago,"I love the bread from this bakery. On the other hand their saleswomen are so unprofessional, they do not smile, are not friendly and make the slice all the time.
+Big big worries they don't wear gloves which I find unacceptable.
+Otherwise I validate their bread 100%",en,NEGATIVE,0.7539774775505066
+Luccia Lolotte,1,a year ago,"I'm putting a star because you can't put 0.
+Frankly nothing to say in terms of pastries and company, but the cashier is to be reviewed! To believe that she is being forced to work and that she has no other alternative. Early in the morning someone cannot be embittered like this! It's because it's close to my job that I go there but otherwise forget it girl! On the other hand, at the level of the one who takes the orders, nothing to say, always smiling, she makes you want to buy.
+Do something for each other. Not smiling! Responds very badly! Look very bad! Put her there in the kitchen but she can't stay there, she makes the bakery ugly.",en,NEGATIVE,0.8624241352081299
+Hu HO,1,3 years ago,"Handy for troubleshooting. I expected a lot from this bakery when I saw the effort that has been made on the decoration. But I was quickly disappointed when I tasted the viennoiseries, too greasy, the puff pastry not good, the chouquettes too dry and too small. Now I only buy bread there. Damage.
+
+At the moment it's the galette des rois, I let myself be tempted since the galettes looked appetizing... once again disappointed, I ask if the galettes are frangipane, he answers me yes . Only, at the first bite, the too dry dough and especially the frangipane is mixed with grated coconut 😡. Luckily I'm not allergic to coconut. Suddenly disappointed once again... decidedly I will settle for a wand for troubleshooting...",en,NEGATIVE,0.7243495583534241
+Malory R,1,a year ago,"frozen pastry...
+deems it credible to make the time wait to defrost the products?
+I remember the young girl who waited a lot for the croissants, she was treated to ridicule once she left, given the size of this pile, she should stop the croissants this one""
+why be mean and so unfriendly?
+I do not congratulate you and do not salute you cape",en,NEGATIVE,0.8802269697189331
+Mia Li,2,3 years ago,"Since the opening I buy pastries there. Since I wondered if it was frozen or not and the answer is clear. I bought a 3 chocolate cake early in the morning and well I ended up with a block of ice cream, the white part had not finished defrosting at all! So I will buy more pastries there and the pastries are not exceptional either...
+The thing that I appreciate on the other hand is the corn bread and the bread with olives which are super good.",en,POSITIVE,0.9243469834327698
+K Kinh,1,2 years ago,"Poor reception, long wait when there were only two customers for two shopkeepers. Best of all, the pastry (raspberry tart) was probably several days old, so a few raspberries were green with mold (not visible from the outside) and the dough was spongy.
+To avoid.",en,NEGATIVE,0.6847402453422546
+N G,5,2 years ago,"there has been progress in terms of customer reception.
+I'm sorry to see that the reviews are mixed. Because this bakery deserves much more than the rating of 3.5.
+I am a tester for several bakeries, especially in Paris in general, and this one is excellent. The baguette is crispy on the outside and airy on the inside.
+The pastries are of very good quality. The puff pastry of the croissant is worked, and the thickness too. For me, it's the best in the area. (And yet I have another just in my street towards Villejuif). I am more than satisfied, go there with your eyes closed. 🤤👌",en,POSITIVE,0.9714516997337341
+Issa Doucouré,1,a year ago,"Sincerely, bakery to avoid, unpleasant waitress, haughty and does not respect anyone, I even want to go back even though it is very good,
+
+To avoid don't be fooled!",en,NEGATIVE,0.5867704153060913
+Gillan Saleh,5,2 months ago,"Very good bread, delicious pastries",en,POSITIVE,0.9796577095985413
+Barbe Amaury,1,a year ago,"I was wondering if I was the only one complaining about the quality of service (Employees you feel like you're bothering). Apparently a big effort to do the above. First time I came back, I wouldn't come back except maybe if nothing else is open.",en,NEGATIVE,0.7960423827171326
+Djamel Benyounes,1,a year ago,"I came at 6 a.m. on March 5, frankly, I was a very good customer with you, I'm sorry to talk like that, the person at the checkout really disrespectful no hello nothing at all learn to respect customers thank you I would not come back to vouuuuss and on top of that she speaks very badly 😣 for nothing",en,NEGATIVE,0.9233497977256775
+Raphael Laphe,1,5 months ago,"Unpleasant reception, I feel like people are going to yell at me. I will never go again.",en,NEGATIVE,0.9759390354156494
+Kevin Chau,3,2 years ago,"A real bakery in the neighborhood is nice! Being able to eat a real baguette close to home is great.
+Deco treat. However, the reception has deteriorated. We have the impression of disturbing more than anything else, it's a shame.",en,NEGATIVE,0.4167556166648865
+mariella thezenas,1,3 months ago,frankly the products are of quality but review your saleswomen!!,en,NEUTRAL,0.5715546607971191
+anne panajatopoulos,1,a year ago,"Very hard brioche without any taste and millefeuille without crunch. No taste.
+15 minutes to serve 3 customers. It's been 3 times and not friendly. I won't go back",en,NEGATIVE,0.9068530797958374
+Katia All,1,9 months ago,"Not at all pleasant you have to spot several times.
+Neither thank you nor goodbye nor no smile
+Even though I said goodbye to the lady...",en,NEGATIVE,0.8663012981414795
+Marlène Mar,5,2 years ago,"Nothing to say I often go there the welcome is great hello the smile the thank you ....
+I don't understand what more do you expect
+Well I noticed there are a lot of customers who don't respect when and come in who don't even say hello
+In any case, nothing to say about the bakery, whether it's the staff or the products.
+She's the best in the quarter
+I strongly recommend",en,POSITIVE,0.5631917119026184
+Thydaphen Khelen,2,2 years ago,"Good morning,
+I think it's better that you tell the two saleswomen who work in the morning to know how to speak correctly and respect the customers. Honestly they are horrible. The way of talking about services etc. I'm never going there again. This is the 3rd time I've been back and now it's over.",en,NEGATIVE,0.9348743557929993
+Sarra Djedidi,5,3 years ago,"Modern, spacious, bright bakery... The sandwiches are delicious and generous as well as the pastries, the brownies are very tasty.
+I was warmly welcomed! I will definitely go back when I'm in the neighborhood again.... Congratulations to the whole team!!!! Good discovery 😍🤓 …",en,POSITIVE,0.9937048554420471
+Juliana QUARESMA B,1,a year ago,"In the first years it was a good place to have breakfast, warm and welcoming… since then they have put two carcasses who do not know how to welcome customers.",en,NEGATIVE,0.6835761666297913
+AlphaV,2,2 years ago,"The pastries are good, too bad it is spoiled by the friendliness of the saleswoman at the checkout, does not wear gloves who touched the tickets, is wrong all the time. You make a complaint, she almost attacks you... Since the deconfinement I don't go there anymore. Too bad for the boss...",en,NEGATIVE,0.793053388595581
+Rachel CHEA,1,2 years ago,"The sellers are unprofessional, moreover I ask for a tradition that is not overcooked, the seller gives me the most cooked of the lot because I said ""good evening"" to her a little offbeat not having heard her first ""good evening"", the seller turned the tradition around so that I wouldn't see the tradition she had chosen.. it's aberrant the maturity of this young saleswoman.",en,NEGATIVE,0.811416745185852
+angelique handzisch,1,2 years ago,"Magnificent bakery, great quality products and choices are there unfortunately everything is completely ruined by the saleswomen not even the basics of politeness so let's not talk about the smile I unfortunately won't be back I'm not a dog",en,NEGATIVE,0.8455475568771362
+Hajira B.,5,a year ago,"Superb good bakery, a real crush 😍, the pastries and pastries are very original and a real treat 😋
+Raspberry croissant is seculent, and Nutella/chocolatine pain au chocolat is delicious...I recommend 200% …",en,POSITIVE,0.9889935851097107
+flo87,1,3 years ago,"Bakery that has just opened, so the decor is neat and the windows are pretty, especially the pastry corner. The staff are friendly. On the other hand, in terms of pastries and bread, the quality is disappointing. €2 for 8 tiny chouquettes. A chocolate Viennese with 15 nuggets that fight a duel. The pains au chocolat look industrial (except for the price) and the tradition is just fine, the crumb is yellowish and dry. I went there 3 times to try a bit of everything but personally I won't go back there again.",en,NEUTRAL,0.3744748532772064
+FNC,1,2 years ago,"Unprofessional sellers, very unpleasant reception. Often the bread seems dated from yesterday.
+I do not recommend this bakery at all.",en,NEGATIVE,0.9667770266532898
+Wass Fut,5,2 years ago,What a pastry! Cake to die for! The apprentice pastry chef is very pleasant. The place is super well located and it is my favorite pastry shop in the area! I highly recommend going there.,en,POSITIVE,0.9918183088302612
+taytay,1,3 years ago,I am honestly very disappointed!!! When a bakery is not even able to make its own pastries!!! and calls himself an artisan baker!!! I put a star just for coffee and orange juice and I don't even pale sandwiches (dry sausage with slice of tomato never seen 😱😱 or even a croque monsieur with a fried egg on top 😱😱😰 😰😰🥵🥵🤮🤮🤮🤮🤮🤮🤮🤮🤮,en,NEGATIVE,0.9600615501403809
+anis lhb,1,a year ago,I bought a salmon panini with a bread that is not even appropriate with the panini it was a baguette or even a bread level garnish it was blah no taste,en,NEGATIVE,0.9671274423599243
+Anais Michel,1,a year ago,"Totally agree with many;
+The bread and pastries are good but the team is unbearable 😣
+Total disrespect to customers. …",en,NEGATIVE,0.720604658126831
+kaci's kaci's,1,a year ago,"A saleswoman a bit old (40 years old), apparently non-respectful Tunisian who speaks badly to everyone, (May 26 morning), the boss has to do something, apparently it's not just me !!!!???",en,NEGATIVE,0.9086412787437439
+Mohaj Moh,1,2 years ago,"Regular customer, always very good products for both pastry and pastries, even if the pastries are quite expensive because of the quality... concerning the saleswomen they are disrespectful, no effort, not at all commercial and I am not the only one to say it look at the other comments even for regular customers there is no effort... We should review this because the day when a competitor will come with better products and better sellers... It will not be the same thing !",en,POSITIVE,0.45131659507751465
+Fabio Barbosa da Silva,5,5 months ago,"Top! It's well done, pretty and tasty",en,POSITIVE,0.9886419177055359
+Loxaï Officiel,5,a year ago,I highly recommend quality product and since the recruitment of a new very professional and smiling saleswoman unlike others...it's the best thanks to Amira (if I'm not mistaken in her first name) for her professionalism that changes everything,en,POSITIVE,0.9852116107940674
+Stef,1,a year ago,"Crumb-filled sandwich with few toppings and no taste. Disappointed every time.
+I wouldn't go anymore.",en,NEGATIVE,0.9610275626182556
+Eva Marra,5,2 years ago,"Very warm welcome! Hot bread at all hours, pain au chocolat otherwise called the Nutella tiger is delicious. Thanks cape!",en,POSITIVE,0.9916349649429321
+Sylvie Volpi,5,8 months ago,Excellent welcome 👍 the two little young people are adorable and in addition the croissant shop is excellent 🤗,en,POSITIVE,0.9913673996925354
+Kerem Özdemir,3,10 months ago,"Very nice bakeries, the taste quality and the queue are always random",en,POSITIVE,0.8321917057037354
+Safa Dalaous,5,2 years ago,Really it's the best bakery in the 94 hygiene the respective employees the homemade products any time when I pass I find the baguettes hot they make offers for the baguettes and the traditions 3 bought 4 th offered the same for pastries and the sandwiches are too good and generous even a little far from my home and there are 2 bakeries nearby but I always find my happiness at the cape I also recommend you friendly and kind saleswomen,en,POSITIVE,0.9873570203781128
+A-T_R,1,2 years ago,"Unfriendly sellers, I don't understand seeing all these negative opinions how the manager lets so many negative electrons represent his bakery... Avoiding it no longer makes you want them",en,NEGATIVE,0.9523042440414429
+Prana Khamph (Prana),1,a year ago,"An employee was super unpleasant with us, saying precisely to her colleague: “customers are starting to get me drunk”.",en,NEGATIVE,0.9493497014045715
+Élise Steff,5,4 months ago,Too good!,en,POSITIVE,0.9663673639297485
+Taos Dxs,3,9 months ago,I do not recommend for pastries (too much butter) but the sandwiches are very good,en,POSITIVE,0.7640520334243774
+Chléa,3,8 months ago,"Good products but the staff is unpleasant and not attentive, it's more than a shame.",en,NEGATIVE,0.951042652130127
+Adama Camara,1,3 years ago,"The pastries are not frozen and are not homemade as well as the baguettes the young people at the checkout 2 very soft in terms of hygiene, it seems to be ok for the moment.. it is not a real craftsman, too bad because freezing them is not top top nice shop warm welcome",en,NEUTRAL,0.4068782925605774
+Nina,5,3 years ago,"I find that the saleswomen are very friendly, smiling quickly
+on the contrary I see when I go there there are customers who do not respect the waiting girl who do not even say hello they pass in front of everyone",en,NEGATIVE,0.46869194507598877
+Eric Honoré Labat,1,a year ago,"The bakery supposed to be open at 6am, got there I was told it only opens at 6.30am",en,NEUTRAL,0.7156361937522888
+N Ben,1,2 years ago,"The saleswomen are not very friendly and seem very tired... there is a real lack of care in relation to customer orders (pastry boxes taped, fingerprints, etc.)",en,NEGATIVE,0.9599217176437378
+Farid Befunk,2,2 years ago,"The choice of products is interesting, the setting friendly, unfortunately the reception is very, very below average; basically it seems to disturb. Strange for a business.",en,NEGATIVE,0.4754014015197754
+Célia Ed-Douiya,1,11 months ago,Unpleasant saleswoman reserves the bread for their friends or for the head of the customer even if there is a long queue,en,NEGATIVE,0.5712493658065796
+Melodie Truca,1,3 years ago,"I have eaten in this bakery a lot of disappointing but edible shoes, on the other hand, I am really sick of it, it is the worst salad I have eaten in my life, a disgusting taste that I cannot define without speaking of the baker's not so emable shame it's close to my house",en,NEGATIVE,0.9824879765510559
+Noëmi MATWIES,1,9 months ago,It's been a year since I stopped going there since I was attacked by a saleswoman. Apparently no improvement. Place to avoid,en,NEGATIVE,0.9342450499534607
+Lina,1,3 years ago,"Infect! 3€40 a tartlet hard as a rock a chocolate bitter as possible, from the outside we expect much better, everything is frozen go your way",en,POSITIVE,0.7952510714530945
+Khadidja didi Laifaoui,5,a year ago,"A real bakery, with pastry terrace, all excellent bread, especially the macarons.",en,POSITIVE,0.9483492374420166
+EYA YASMINE SAADALLAH,5,3 years ago,I tried this bakery during my visit to Paris. The cakes are succulent. I recommend it ☺ I will come again. Thank you very much.,en,POSITIVE,0.9895069003105164
+nathalie S,5,2 years ago,"bakery at the top nothing to say
+especially for the anti-waste basket
+I don't understand the negative comments",en,NEGATIVE,0.794217050075531
+Sybil cesoironvasemarrer “cesoironvasemarrer”,1,3 years ago,First negative experience sorry I took a Croque mr with egg a chocolate bread and a homemade apple turnover according to them I don't digest it at all and didn't eat anything else for me very bad experience,en,NEGATIVE,0.9622355699539185
+Instru Rap fr,5,2 years ago,"Very nice discovery! Pistachio lover, I loved their pistachio croissants which is just WoW!",en,POSITIVE,0.9909291863441467
+Yahiaoui Anissa,1,2 years ago,"Very good products and beautiful bakery, but the two saleswomen are very very unpleasant, too bad.",en,NEGATIVE,0.7973543405532837
+Patricia CAYREL,5,a year ago,"Bakery near my place of work.... Wide choice of pastries, sandwiches, pastries.... Everything is very good.... I recommend this place",en,POSITIVE,0.990810751914978
+kazo chill,1,a year ago,the saleswomen they are not respect people with their grimace and impolite. 🤮🤮🤮🤮,en,NEGATIVE,0.9641371369361877
+Fanta sacko,1,2 years ago,Very unpleasant saleswoman very badly polite no respect for the customers without forgetting without us the customers no salary so respect us at least,en,NEGATIVE,0.948441743850708
+Jedi Lord,5,2 years ago,Good neighborhood bakery. Well located and very good baguette. They make good and beautiful cake.,en,POSITIVE,0.98405522108078
+MAGIC MATOS,5,3 years ago,"A very nice bakery, thank you for the saleswomen for the welcome, a very nice range of pastries and a wide choice of snacking",en,POSITIVE,0.9900912046432495
+EzerArthiom,5,a year ago,Very nice place with a wide selection. The taste is on point,en,POSITIVE,0.9848887920379639
+Saida Djedidi,5,3 years ago,"Very good sandwich and the lemon pie is delicious, nice welcome, I will come back.☺️ I recommend.",en,POSITIVE,0.9921895265579224
+Cassandra Dlp,5,a year ago,"Very good pastries, nice presentation.
+The pistachio éclair is your detour!!",en,POSITIVE,0.977702260017395
+Giga Brigitte,4,3 years ago,Very good pastries and delicious cakes as for the homemade baguettes of very good quality not to be missed ☺,en,POSITIVE,0.9858620166778564
+Bryan T.,5,3 years ago,"I was very well received there, their croissants are good.",en,POSITIVE,0.9896050691604614
+Chantal Minssart,3,a year ago,"Friendly in the reception, generous in the sharing and of good quality. It is easy to return there",en,POSITIVE,0.9609739780426025
+Beerus Wiscat,1,a year ago,"The saleswomen are really not friendly and not professional, and we see that it does not change",en,NEGATIVE,0.950660765171051
+Manpreet Singh,5,a year ago,Very good service with the morning saleswomen. Always smiling,en,POSITIVE,0.987095057964325
+Pauline Vetroff,1,a year ago,"Unpleasant and impolite sellers. Degraded material, avoid!",en,NEGATIVE,0.9507089257240295
+SALOME COHEN,5,a month ago,I adore !!,en,POSITIVE,0.9672913551330566
+Orchide,5,2 years ago,Very good welcome staff always smiling good pastries,en,POSITIVE,0.9916490316390991
+L’ artiste,1,3 years ago,Do not wear a mask or gloves and touch the bread with the hands that touched the banknotes. Dirty.,en,NEGATIVE,0.8794160485267639
+Thanh-Hien Phan,1,2 years ago,Passable baguette and mediocre service. First and last visit.,en,NEGATIVE,0.692358136177063
+Djamila Malki,5,a year ago,Friendly welcome and very good quality products!,en,POSITIVE,0.9839851260185242
+Elise Kiki,1,a year ago,"Welcome 👎🏼, excessively expensive pastry, too bad. …",en,NEGATIVE,0.40124377608299255
+Colin,5,2 years ago,"warm welcome and good pastries, I strongly recommend",en,POSITIVE,0.9835768342018127
+MED CHEDLY Belkhouja,5,a year ago,Quality bread and a warm welcome,en,POSITIVE,0.9512524008750916
+Siham. Phy,1,3 years ago,"Very bad reception really, I think the positive comments come from the owner.",en,NEGATIVE,0.4851504862308502
+Jérémy Quesnel,1,2 years ago,Unfriendly waitresses and bad talk to customers. To flee.,en,NEGATIVE,0.950507640838623
+Jean-Hervé Moysan,5,a year ago,Great service. Heartwarming welcome. thank you,en,POSITIVE,0.9891983866691589
+Tristan Leandre,5,3 years ago,Everything is tasty ! Finally a real bakery,en,POSITIVE,0.9803929924964905
+Gokhan Gulmez,1,a year ago,The employees are very rude,en,NEGATIVE,0.9759232997894287
+Yves Mukendi,4,3 years ago,Good bakery definitely the best in the neighborhood,en,POSITIVE,0.9788190126419067
+Elodie Pan,2,a year ago,Very unpleasant service,en,NEGATIVE,0.9641045331954956
+H R (Icarus),4,a year ago,quality is still ok,en,POSITIVE,0.5882064700126648
+Alexis Bonneaud,1,a year ago,Opinions here 👇 your fear 😭,en,NEUTRAL,0.6031870245933533
+Hugo Dlt,5,2 years ago,Moha it's a good one,en,POSITIVE,0.9269973039627075
+Hugo Gorintin,5,3 years ago,Excellent bakery!,en,POSITIVE,0.9436870813369751
+RF 94 (RF94),5,2 years ago,Really heja the top,en,NEUTRAL,0.725053608417511
+Stéphane Bouland,2,10 months ago,Cold employees,en,NEUTRAL,0.6083340048789978
+KANDE TOUNKARA,5,9 months ago,Top places,en,NEUTRAL,0.618986964225769
+Choopa AB,5,2 years ago,The delicious bread 😋…,en,POSITIVE,0.8846799731254578
+Nassim Bourguiba,5,a year ago,Top notch bakery,en,POSITIVE,0.7484339475631714

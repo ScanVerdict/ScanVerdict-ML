@@ -294,6 +294,9 @@ def execute_analysis(my_place_id):
 
     # Subgraph1
     df_groupby_date_label = df.groupby(['date', 'label (roberta)']).size().unstack(fill_value=0)
+    for col in ['NEGATIVE', 'NEUTRAL', 'POSITIVE']:
+        if col not in df_groupby_date_label.columns:
+            df_groupby_date_label[col] = 0
     df_groupby_date_label['TOTAL'] = df_groupby_date_label[['NEGATIVE', 'NEUTRAL', 'POSITIVE']].sum(axis=1)
     df_groupby_date_label.drop(df_groupby_date_label[df_groupby_date_label.index > 12].index, inplace=True)
     df_groupby_date_label = df_groupby_date_label.sort_index(ascending=False)

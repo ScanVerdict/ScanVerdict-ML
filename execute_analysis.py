@@ -26,7 +26,7 @@ def execute_analysis(my_place_id):
 
     def scrape_reviews(my_place_id):
 
-        google_url = "https://www.google.com/maps/place/?q=place_id:"+my_place_id
+        google_url = "https://www.google.com/maps/place/?q=place_id:" + my_place_id
 
         chromedriver_autoinstaller.install()
 
@@ -163,7 +163,7 @@ def execute_analysis(my_place_id):
 
     ### DATA CLEANING
 
-    data_dict = scrape_reviews("https://www.google.com/maps/place/Googleplex/@37.4220656,-122.0862784,17z/data=!3m1!4b1!4m6!3m5!1s0x808fba02425dad8f:0x6c296c66619367e0!8m2!3d37.4220656!4d-122.0840897!16zL20vMDNiYnkx?entry=ttu")
+    data_dict = scrape_reviews("https://www.google.com/maps/place/?q=place_id:" + my_place_id)
 
     df = pd.DataFrame.from_dict(data_dict, orient='index', columns=['grading', 'date', 'Text'], ).reset_index()
     df = df.dropna()
@@ -287,7 +287,7 @@ def execute_analysis(my_place_id):
         # Creer une pie chart pour le nom courant
         fig = go.Figure(data=[go.Pie(labels=['Positif', 'Négatif', 'Neutre'], values=liste)])
         fig.update_layout(title_text='Sentiment des commentaires contenant le mot "' + nom + '"')
-        fig.show()
+        # fig.show()
         figs_json.append(pio.to_json(fig))
 
     ## Pourcentage de sentiments positifs, neutres, négatifs au fil du temps (3 courbes, un pour chaque)
@@ -320,7 +320,7 @@ def execute_analysis(my_place_id):
                         text=['{:.2f}%'.format(v) for v in df_groupby_date_label['NEUTRAL']/df_groupby_date_label['TOTAL']*100], hovertemplate='%{text}<extra></extra>'))
 
     fig1.update_layout(title='Sentiment Analysis over Time', xaxis_title='Month(s) ago', yaxis_title='Percentage %', yaxis_range=[0,100])
-    fig1.show()
+    # fig1.show()
 
 
     ## Subgraph2
@@ -353,7 +353,7 @@ def execute_analysis(my_place_id):
                             hovertemplate='%{text}<extra></extra>'))
 
     fig2.update_layout(title='Positive Change over Time', xaxis_title='Month(s) ago', yaxis_title='Percentage', yaxis_range=[0,100])
-    fig2.show()
+    # fig2.show()
 
 
     ## Subgraph3
@@ -386,7 +386,7 @@ def execute_analysis(my_place_id):
                             hovertemplate='%{text}<extra></extra>'))
 
     fig3.update_layout(title='Negative Change over Time', xaxis_title='Month(s) ago', yaxis_title='Percentage', yaxis_range=[0,100])
-    fig3.show()
+    # fig3.show()
 
 
     ## Subgraph4
@@ -419,7 +419,7 @@ def execute_analysis(my_place_id):
                             hovertemplate='%{text}<extra></extra>'))
 
     fig4.update_layout(title='Neutral Change over Time', xaxis_title='Month(s) ago', yaxis_title='Percentage', yaxis_range=[0,100])
-    fig4.show()
+    # fig4.show()
 
 
     ## MAIN GRAPH
@@ -444,7 +444,7 @@ def execute_analysis(my_place_id):
     fig.add_annotation(text="Percentage %", textangle=-90, xref="paper", yref="paper", x=-0.1, y=0.5, showarrow=False)
 
     # Show the combined subplots
-    fig.show()
+    # fig.show()
 
     figs_json.append(pio.to_json(fig))
 
@@ -455,7 +455,7 @@ def execute_analysis(my_place_id):
 
     fig = go.Figure(data=[go.Pie(labels=df_pie.index, values=df_pie.values)])
 
-    fig.show()
+    # fig.show()
 
     figs_json.append(pio.to_json(fig))
 
@@ -480,9 +480,8 @@ def execute_analysis(my_place_id):
 
     fig.update_layout(title='Star Rating over Time', xaxis_title='Month(s) ago', yaxis_title='Percentage', yaxis_range=[0,5])
 
-    fig.show()
+    # fig.show()
 
     figs_json.append(pio.to_json(fig))
 
-    print(figs_json)
     return figs_json

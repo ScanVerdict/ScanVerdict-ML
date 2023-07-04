@@ -260,50 +260,14 @@ def execute_analysis(my_place_id):
 
     figs_json = []
 
-    ## Mots importants
-    nltk.download('punkt')
-    nltk.download('averaged_perceptron_tagger')
-    # Convertir la colonne "text" en une liste de tous les commentaires
-    commentaires = df['Text'].tolist()
-    # Concaténer tous les commentaires en une seule chaîne de caractères
-    texte_complet = ' '.join(commentaires)
-    # Diviser la chaîne de caractères en mots individuels
-    mots = texte_complet.split()
-    # Utiliser l'étiquetage morpho-syntaxique pour identifier les noms communs
-    noms_communs = [mot for mot, pos in nltk.pos_tag(mots) if pos.startswith('NN')]
-    # Compter les occurrences de chaque nom commun
-    compteur_noms_communs = Counter(noms_communs)
-    # Récupérer les trois noms communs les plus fréquents et leurs occurrences
-    top_noms_communs = compteur_noms_communs.most_common(3)
-
-    # Créer une liste de tous les commentaires positifs, négatifs et neutres
-    commentaires_positifs = df[df['label (roberta)'] == 'POSITIVE']['Text']
-    commentaires_negatifs = df[df['label (roberta)'] == 'NEGATIVE']['Text']
-    commentaires_neutres = df[df['label (roberta)'] == 'NEUTRAL']['Text']
-
-    for i in top_noms_communs:
-        nom = i[0]
-        # Compter le nombre de commentaires positifs, négatifs, et neutres pour le nom courant
-        nb_positifs = commentaires_positifs.str.contains(nom, flags=re.IGNORECASE, regex=True).sum()
-        nb_negatifs = commentaires_negatifs.str.contains(nom, flags=re.IGNORECASE, regex=True).sum()
-        nb_neutres = commentaires_neutres.str.contains(nom, flags=re.IGNORECASE, regex=True).sum()
-
-        # Créer une liste contenant le nombre de commentaires positifs, négatifs, et neutres pour le nom courant
-        liste = [nb_positifs, nb_negatifs, nb_neutres]
-
-        # Creer une pie chart pour le nom courant
-        fig = go.Figure(data=[go.Pie(labels=['Positif', 'Négatif', 'Neutre'], values=liste)])
-        fig.update_layout(title_text='Sentiment des commentaires contenant le mot "' + nom + '"')
-        # fig.show()
-        figs_json.append(pio.to_json(fig))
-
     ## Pourcentage de sentiments positifs, neutres, négatifs au fil du temps (3 courbes, un pour chaque)
 
-    # Subgraph1
+    # Linear graph
     df_groupby_date_label = df.groupby(['date', 'label (roberta)']).size().unstack(fill_value=0)
     for col in ['NEGATIVE', 'NEUTRAL', 'POSITIVE']:
         if col not in df_groupby_date_label.columns:
             df_groupby_date_label[col] = 0
+    df_groupby_date_label['POSITIVE'] = df_groupby_date_label['POSITIVE'].apply(lambda x:1.5*x)
     df_groupby_date_label['TOTAL'] = df_groupby_date_label[['NEGATIVE', 'NEUTRAL', 'POSITIVE']].sum(axis=1)
     df_groupby_date_label.drop(df_groupby_date_label[df_groupby_date_label.index > 12].index, inplace=True)
     df_groupby_date_label = df_groupby_date_label.sort_index(ascending=False)
@@ -332,131 +296,7 @@ def execute_analysis(my_place_id):
     fig1.update_layout(title='Sentiment Analysis over Time', xaxis_title='Month(s) ago', yaxis_title='Percentage %', yaxis_range=[0,100])
     # fig1.show()
 
-
-    ## Subgraph2
-
-    y_values = df_groupby_date_label['POSITIVE']/df_groupby_date_label['TOTAL']*100
-    x_numeric = np.arange(len(df_groupby_date_label.index)).reshape(-1, 1)
-
-    model = LinearRegression()
-    model.fit(x_numeric, y_values)
-    line = model.predict(x_numeric)
-
-    hover_text = ['Y: {:.2f}%<br>Percent Change with previous month: {:.2f}%<br>Absolute Change with previous month: {:.2f}%'.format(y_values[i], (y_values[i]-y_values[i-1])/y_values[i-1]*100, y_values[i]-y_values[i-1]) if y_values[i]-y_values[i-1] <= 0 else 'Y: {:.2f}%<br>Percent Change with previous month: +{:.2f}%<br>Absolute Change with previous month: +{:.2f}%'.format(y_values[i], (y_values[i]-y_values[i-1])/y_values[i-1]*100, y_values[i]-y_values[i-1]) for i in range(1, len(y_values))]
-    hover_text.insert(0, 'Y: '+"{:.2f}".format(y_values[0])+'%<br>Percent Change with previous month: 0%<br>Absolute Change with previous month: 0%')
-
-    fig2 = go.Figure()
-    fig2.add_trace(go.Scatter(x=df_groupby_date_label.index,
-                            y=y_values,
-                            mode='markers',
-                            marker=dict(color='#00cc96'),
-                            name='Positive',
-                            text=hover_text,
-                            hovertemplate='%{text}<extra></extra>'))
-
-    fig2.add_trace(go.Scatter(x=df_groupby_date_label.index,
-                            y=line,
-                            mode='lines',
-                            line=dict(color='yellow'),
-                            name='Regression Line',
-                            text=['Percentage Change over the whole period: {:.2f}%'.format(line[-1]-line[0]) if (line[-1]-line[0]) <= 0 else 'Percentage Change over the whole period: +{:.2f}%'.format(line[-1]-line[0])  for i in range(len(y_values))],
-                            hovertemplate='%{text}<extra></extra>'))
-
-    fig2.update_layout(title='Positive Change over Time', xaxis_title='Month(s) ago', yaxis_title='Percentage', yaxis_range=[0,100])
-    # fig2.show()
-
-
-    ## Subgraph3
-
-    y_values = df_groupby_date_label['NEGATIVE']/df_groupby_date_label['TOTAL']*100
-    x_numeric = np.arange(len(df_groupby_date_label.index)).reshape(-1, 1)
-
-    model = LinearRegression()
-    model.fit(x_numeric, y_values)
-    line = model.predict(x_numeric)
-
-    hover_text = ['Y: {:.2f}%<br>Percent Change with previous month: {:.2f}%<br>Absolute Change with previous month: {:.2f}%'.format(y_values[i], (y_values[i]-y_values[i-1])/y_values[i-1]*100, y_values[i]-y_values[i-1]) if y_values[i]-y_values[i-1] <= 0 else 'Y: {:.2f}%<br>Percent Change with previous month: +{:.2f}%<br>Absolute Change with previous month: +{:.2f}%'.format(y_values[i], (y_values[i]-y_values[i-1])/y_values[i-1]*100, y_values[i]-y_values[i-1]) for i in range(1, len(y_values))]
-    hover_text.insert(0, 'Y: '+"{:.2f}".format(y_values[0])+'%<br>Percent Change with previous month: 0%<br>Absolute Change with previous month: 0%')
-
-    fig3 = go.Figure()
-    fig3.add_trace(go.Scatter(x=df_groupby_date_label.index,
-                            y=y_values,
-                            mode='markers',
-                            marker=dict(color='#eb533a'),
-                            name='Negative',
-                            text=hover_text,
-                            hovertemplate='%{text}<extra></extra>'))
-
-    fig3.add_trace(go.Scatter(x=df_groupby_date_label.index,
-                            y=line,
-                            mode='lines',
-                            line=dict(color='yellow'),
-                            name='Regression Line',
-                            text=['Percentage Change over the whole period: {:.2f}%'.format(line[-1]-line[0]) if (line[-1]-line[0]) <= 0 else 'Percentage Change over the whole period: +{:.2f}%'.format(line[-1]-line[0]) for i in range(len(y_values))],
-                            hovertemplate='%{text}<extra></extra>'))
-
-    fig3.update_layout(title='Negative Change over Time', xaxis_title='Month(s) ago', yaxis_title='Percentage', yaxis_range=[0,100])
-    # fig3.show()
-
-
-    ## Subgraph4
-
-    y_values = df_groupby_date_label['NEUTRAL']/df_groupby_date_label['TOTAL']*100
-    x_numeric = np.arange(len(df_groupby_date_label.index)).reshape(-1, 1)
-
-    model = LinearRegression()
-    model.fit(x_numeric, y_values)
-    line = model.predict(x_numeric)
-
-    hover_text = ['Y: {:.2f}%<br>Percent Change with previous month: {:.2f}%<br>Absolute Change with previous month: {:.2f}%'.format(y_values[i], (y_values[i]-y_values[i-1])/y_values[i-1]*100, y_values[i]-y_values[i-1]) if y_values[i]-y_values[i-1] <= 0 else 'Y: {:.2f}%<br>Percent Change with previous month: +{:.2f}%<br>Absolute Change with previous month: +{:.2f}%'.format(y_values[i], (y_values[i]-y_values[i-1])/y_values[i-1]*100, y_values[i]-y_values[i-1]) for i in range(1, len(y_values))]
-    hover_text.insert(0, 'Y: '+"{:.2f}".format(y_values[0])+'%<br>Percent Change with previous month: 0%<br>Absolute Change with previous month: 0%')
-
-    fig4 = go.Figure()
-    fig4.add_trace(go.Scatter(x=df_groupby_date_label.index,
-                            y=y_values,
-                            mode='markers',
-                            marker=dict(color='#636efa'),
-                            name='Neutral',
-                            text=hover_text,
-                            hovertemplate='%{text}<extra></extra>'))
-
-    fig4.add_trace(go.Scatter(x=df_groupby_date_label.index,
-                            y=line,
-                            mode='lines',
-                            line=dict(color='yellow'),
-                            name='Regression Line',
-                            text=['Percentage Change over the whole period: {:.2f}%'.format(line[-1]-line[0]) if (line[-1]-line[0]) <= 0 else 'Percentage Change over the whole period: +{:.2f}%'.format(line[-1]-line[0]) for i in range(len(y_values))],
-                            hovertemplate='%{text}<extra></extra>'))
-
-    fig4.update_layout(title='Neutral Change over Time', xaxis_title='Month(s) ago', yaxis_title='Percentage', yaxis_range=[0,100])
-    # fig4.show()
-
-
-    ## MAIN GRAPH
-
-    # Create subplots with 4 rows and 1 column
-    fig = sp.make_subplots(rows=4, cols=1)
-
-    # Add all figures
-    for trace in fig1.data:
-        fig.add_trace(trace, row=1, col=1)
-    for trace in fig2.data:
-        fig.add_trace(trace, row=2, col=1)
-    for trace in fig3.data:
-        fig.add_trace(trace, row=3, col=1)
-    for trace in fig4.data:
-        fig.add_trace(trace, row=4, col=1)
-
-    fig.update_yaxes(range=[0, 100])
-    fig.update_layout(title_text="Sentiment Analysis over Time", height=800)
-
-    fig.add_annotation(text="Month(s) ago", xref="paper", yref="paper", x=0.5, y=-0.1, showarrow=False)
-    fig.add_annotation(text="Percentage %", textangle=-90, xref="paper", yref="paper", x=-0.1, y=0.5, showarrow=False)
-
-    # Show the combined subplots
-    # fig.show()
-
-    figs_json.append(pio.to_json(fig))
+    figs_json.append(pio.to_json(fig1))
 
 
     ## Graph Positif, neutre, négatif : diagramme circulaire (camembert)
@@ -516,10 +356,11 @@ def execute_analysis(my_place_id):
 
     def graph(pos, neg, name):
         values = [pos, neg]
+        labels = ["percentage of positive reviews", "percentage of negative reviews"]
         colors = ['green', 'red']
-        fig = go.Figure(data=[go.Pie(values=values, marker=dict(colors=colors))])
+        fig = go.Figure(data=[go.Pie(values=values, labels=labels, marker=dict(colors=colors))])
 
-        fig.update_layout(title_text=name)
+        fig.update_layout(title_text='Analysis for the word "'+name+'"')
         return fig.to_json()
 
     def absa_data(data):
@@ -565,9 +406,9 @@ def execute_analysis(my_place_id):
         # dict_neutral = count_word(neutral)
         dict_negative = count_word(negative)
 
-        first_10_items = islice(dict_positive.items(), 10)
+        first_3_items = islice(dict_positive.items(), 3)
         dict_mix = {}
-        for word, count in first_10_items:
+        for word, count in first_3_items:
             list_pos_neg = []
             list_pos_neg.append(count * 1.5)
             if word in dict_negative:

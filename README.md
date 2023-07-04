@@ -23,6 +23,8 @@ Or you can download all of these with this command as well:
 pip install -r requirements.txt
 ```
 
+The first run will take some time, approximately 5 minutes, because some dependencies need to be installed for the word analysis. The following runs should be faster. 
+
 ## Key File Description
 
 execute_analysis.py contains the whole data analysis workflow excluding the EDA and the evaluation of the model. 

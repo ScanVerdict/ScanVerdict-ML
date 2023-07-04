@@ -1,4 +1,4 @@
-# ScanVerdit-ML
+# ScanVerdict-ML
 
 ## About 
 
@@ -27,3 +27,10 @@ pip install -r requirements.txt
 
 execute_analysis.py contains the whole data analysis workflow excluding the EDA and the evaluation of the model. 
 app.py contains the api call between the front and the back. 
+
+## Run API
+
+To run the flask API, run in the terminal: 
+```bash
+Flask --app app run
+```

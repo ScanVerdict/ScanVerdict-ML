@@ -19,6 +19,13 @@ from collections import Counter
 import nltk
 import re
 import plotly.subplots as sp
+from pyabsa import available_checkpoints
+from pyabsa import ATEPCCheckpointManager
+from itertools import islice
+import nltk
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+from textblob import Word
 
 
 def execute_analysis(my_place_id):
@@ -64,8 +71,8 @@ def execute_analysis(my_place_id):
             # get all the spans
             span_elements = reviews_info.find_elements(By.TAG_NAME, 'span')
             total_reviews = int(span_elements[8].text[1:-1].replace(",", "").replace("\u202f", ""))
-            if total_reviews > 300:
-                total_reviews = 300
+            if total_reviews > 100:
+                total_reviews = 100
         except:
             print("Couldn't get number of reviews.")
 
@@ -485,6 +492,103 @@ def execute_analysis(my_place_id):
 
     # fig.show()
 
+    # WORD ANALYSIS
+
+
+    checkpoint_map = available_checkpoints()
+    aspect_extractor = ATEPCCheckpointManager.get_aspect_extractor(checkpoint='english',auto_device=True)
+
+    def analyse_sent(text):
+        atepc_result = aspect_extractor.extract_aspect(inference_source=text,  pred_sentiment=True)
+        return atepc_result[0]['aspect'], atepc_result[0]['sentiment'], atepc_result[0]['confidence']
+
+    def count_word(list):
+        dict_res = {}
+        for word in list.split():
+            a = Word(word).lemmatize()
+            if a not in dict_res:
+                dict_res[a] = 1
+            else:
+                val = dict_res[a] + 1
+                dict_res[a] = val
+        sorted_dict = dict(sorted(dict_res.items(), key=lambda x: x[1], reverse=True))
+        return sorted_dict
+
+    def graph(pos, neg, name):
+        values = [pos, neg]
+        colors = ['green', 'red']
+        fig = go.Figure(data=[go.Pie(values=values, marker=dict(colors=colors))])
+
+        fig.update_layout(title_text=name)
+        return fig.to_json()
+
+    def absa_data(data):
+        work_data = data[:100][:] #Environ 1min15 pour 25 avis
+        # work_data = data
+        aspect = []
+        sentiment = []
+        confidence = []
+
+        for index, row in work_data.iterrows():
+            text = []
+            text.append(row['Text'])
+            a, s, c = analyse_sent(text)
+            aspect.append(a)
+            sentiment.append(s)
+            confidence.append(c)
+
+        work_data["Aspect"] = aspect
+        work_data["Sentiment"] = sentiment
+        work_data["Confidence"] = confidence
+
+        work_data.to_csv("export_csv_file.csv")
+        data = pd.read_csv("export_csv_file.csv", sep=",")
+        
+        positive = ""
+        neutral = ""
+        negative = ""
+        for idx, row in data.iterrows():
+            aspect = eval(row.Aspect)
+            sentiment = eval(row.Sentiment)
+            for i in range(0, len(aspect)):
+                if sentiment[i] == "Positive":
+                    positive += " " + aspect[i]
+                if sentiment[i] == "Neutral":
+                    neutral += " " + aspect[i]
+                else:
+                    negative += " " + aspect[i]
+        positive = positive.lower()
+        # neutral = neutral.lower()
+        negative = negative.lower()
+
+        dict_positive = count_word(positive)
+        # dict_neutral = count_word(neutral)
+        dict_negative = count_word(negative)
+
+        first_10_items = islice(dict_positive.items(), 10)
+        dict_mix = {}
+        for word, count in first_10_items:
+            list_pos_neg = []
+            list_pos_neg.append(count * 1.5)
+            if word in dict_negative:
+                list_pos_neg.append(dict_negative[word])
+            else:
+                list_pos_neg.append(0)
+            dict_mix[word] = list_pos_neg
+            sum = list_pos_neg[0] + list_pos_neg[1]
+            list_pos_neg.append(list_pos_neg[0] / sum)
+            list_pos_neg.append(list_pos_neg[1] / sum)
+
+        list_graph = []
+        for key in dict_mix:
+            list_graph.append(graph(dict_mix[key][2],dict_mix[key][3], key))
+        return list_graph
+
     figs_json.append(pio.to_json(fig))
+
+    absa = absa_data(df)
+    for figure in absa:
+        figs_json.append(figure)
+
 
     return figs_json

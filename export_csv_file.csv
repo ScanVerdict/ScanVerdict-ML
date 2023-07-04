@@ -1,0 +1,15 @@
+ID,index,grading,date,Text,Language,label (roberta),score (roberta),Aspect,Sentiment,Confidence
+0,Nonamed Unamed,1,12,"This school is full of people who have failed their preparation. I advise you to first do a public preparation, rather than pay. If you fail your public preparation then you are admitted to the epita. So it is better to do a prep (mpsi, ppsi, other and obviously mp2i). The dropout rate is very high (and chess profiles are quite often passionate people). At this price, I advise you to take several private teachers, and in a real preparation",en,NEUTRAL,0.45485323667526245,['price'],['Negative'],[0.9521]
+1,sousouu sousouu,1,12,"A week that I call is not answered while it is written open on the site.
+You move, they did nothing at the reception frankly change incompetent staff. Civil servant not abused 😒😒😒 …",en,NEGATIVE,0.9087712168693542,"['call', 'incompetent']","['Negative', 'Negative']","[0.998, 0.998]"
+2,Jean-Sébastien Grange,2,1,Costs prohibitive.,en,NEGATIVE,0.6483824253082275,['Costs'],['Negative'],[0.9993]
+3,Hey Cognito,1,12,Exorbitant price for pitiful distance courses,en,NEGATIVE,0.8338805437088013,['price'],['Negative'],[0.9972]
+4,Benjamin AIMONE,5,12,"A great school, mine.",en,POSITIVE,0.909320592880249,['school'],['Positive'],[0.9994]
+5,Tanzila Hasan Pinky,4,12,"This is another campus of EPITA and it's very large as well very well equipped.
+Large classroom and all the floors do have some good placement with nice exist for everyone.
+In ground floor there is a huge canteen for students and coffee machine for student where we can get low price coffee for everyone.
+
+Large lunch benches are available in the entrance and there was a celebration place on the other side of the campus.
+Even the campus is full of greenery.
+
+I recommend students who are interested for technical stuffs this is a good place for gaining some experience and think out of the box.",en,POSITIVE,0.9618284702301025,['canteen'],['Positive'],[0.999]
